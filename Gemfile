@@ -5,7 +5,6 @@ ruby "2.0.0"
 
 
 gem 'rails', '3.2.13'		  # Ruby on Rails
-gem "thin"                 # Webserver
 gem "foreman"               # Server management
 gem "unicorn", "~> 4.6.2"	   # HTTP server
 gem "dalli", "~> 2.6.4"       # High performance memcached client for Ruby
@@ -20,7 +19,7 @@ group :development, :test do
 	gem "sqlite3-ruby", "~> 1.3.0", :require => "sqlite3"
 	gem "faker", "1.0.1"
 	gem "spork", "~> 0.9.2"
-	gem "rspec", "~> 2.13.0"	  # BDD for Ruby
+	gem "rspec-rails"
 	gem "factory_girl_rails", "~> 4.2.1"
 	gem "cucumber", "1.2.5"
 	gem "cucumber-rails", "1.3.0", :require => false

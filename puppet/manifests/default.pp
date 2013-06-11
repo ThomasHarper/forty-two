@@ -70,6 +70,11 @@ class { 'memcached': }
 
 # --- Packages -----------------------------------------------------------------
 
+# OpenJDK 6
+package { 'openjdk-6-jre':
+  ensure => installed
+}
+
 package { 'curl':
   ensure => installed
 }
@@ -114,6 +119,12 @@ exec { 'install_bundler':
   require => Exec['install_ruby']
 }
 
+# --- Heroku --------------------------------------------------------------------
+
+exec { "install_heroku_toolbelt":
+    command => "wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh",
+    cwd    => "${fortytwo}"
+}
 
 # --- fortytwo --------------------------------------------------------------------
 
