@@ -30,6 +30,9 @@ group :development do
   gem "rspec-rails"
   gem "rails_best_practices"
   gem "brakeman"
+  gem "better_errors"
+  gem "annotate"
+  gem 'xray-rails'
 end
 
 group :test do
