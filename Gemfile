@@ -50,6 +50,7 @@ group :assets do
   gem "globalize3", "~> 0.3.0"
   gem "friendly_id", "~> 4.0.9"
   gem "jquery-rails"
+  gem "jquery-ui-rails"
   gem "uglifier", ">= 1.0.3"
 end
 
